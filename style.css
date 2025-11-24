@@ -298,24 +298,24 @@ section .button {
     margin: 16px 0;
 }
 
-section .button button {
-    outline: none;
+.download-btn {
+    display: inline-block;
     padding: 8px 16px;
     border-radius: 4px;
     font-size: 25px;
-    font-weight: 400;
     background: greenyellow;
     color: black;
-    font-weight: 400;
     border: 2px solid transparent;
     cursor: pointer;
-    transition: all 0.4s ease;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-section .button button:hover {
-    background-color: white;
+.download-btn:hover {
+    background: white;
+    color: greenyellow;
     border-color: greenyellow;
-    color: greenyellow
 }
 
 /*skills*/
@@ -507,4 +507,5 @@ section .button button:hover {
 .contact span {
     color: white;
     font-size: 22px;
+
 }
