@@ -140,24 +140,22 @@ section {
 
 section .main-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 100px;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 0px;
     padding: 20px;
 }
 
 .main-container .image {
-    width: 500px;
-    height: 80vh;
-    border-radius: 100%;
-    overflow: hidden;
-    box-shadow: 0 0 50px greenyellow;
-
     width: 100%;
     max-width: 380px;
     height: auto;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 50px greenyellow;
+    margin: 0 auto;
 
 }
 
