@@ -79,3 +79,11 @@ function typeWriter() {
 }
 
 typeWriter();
+
+function hamburg() {
+    document.querySelector(".dropdown").classList.add("show");
+}
+
+function cancel() {
+    document.querySelector(".dropdown").classList.remove("show");
+}
