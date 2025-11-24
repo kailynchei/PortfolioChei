@@ -379,7 +379,6 @@ section .button {
     width: 90%;
     max-width: 1200px;
     height: 600px;
-    /* default height for desktop screens */
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -461,6 +460,28 @@ section .button {
     margin-bottom: 100px;
 }
 
+.project-info {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.project-info h3 {
+    color: greenyellow;
+    font-size: 28px;
+    font-weight: 700;
+    text-shadow: 0 0 10px greenyellow;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
 
 @media screen and (max-width: 768px) {
     .slider {
@@ -507,5 +528,4 @@ section .button {
 .contact span {
     color: white;
     font-size: 22px;
-
 }
