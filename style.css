@@ -366,6 +366,26 @@ section .button {
     color: white;
 }
 
+.skills .box1 {
+    border: solid greenyellow;
+    background: greenyellow;
+    height: 100px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.box1 h3 {
+    color: black;
+    text-align: center;
+    margin-top: 33px;
+}
+
+.box1:hover {
+    background: greenyellow;
+    color: black;
+    transform: translateY(-10px);
+}
+
 /*Projects*/
 .porjects {
     background: black;
