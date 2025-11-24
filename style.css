@@ -143,6 +143,9 @@ section .main-container {
     justify-content: space-between;
     padding-left: 100px;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
 }
 
 .main-container .image {
@@ -151,6 +154,11 @@ section .main-container {
     border-radius: 100%;
     overflow: hidden;
     box-shadow: 0 0 50px greenyellow;
+
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+
 }
 
 .main-container .image img {
@@ -159,6 +167,11 @@ section .main-container {
 
 .main-container .image:hover {
     animation: animate 1.5s ease-in-out infinite;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 @keyframes animate {
@@ -220,6 +233,25 @@ section .main-container {
 .content p {
     font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;
+}
+
+@media (max-width: 900px) {
+    .nav-container .links {
+        display: none;
+    }
+
+    .hamburg {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .dropdown {
+        transform: translateY(-500px);
+    }
+
+    .dropdown.show {
+        transform: translateY(0);
+    }
 }
 
 /*About section*/
@@ -318,6 +350,23 @@ section .button {
     border-color: greenyellow;
 }
 
+@media(max-width: 900px) {
+    .about .about-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .left img {
+        width: 80%;
+        height: auto;
+    }
+
+    .about-details .right {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
 /*skills*/
 .skills {
     background: black
@@ -351,7 +400,9 @@ section .button {
 
 .skills .box {
     margin: 20px 0;
-    width: calc(100% / 3 -20px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
     text-align: center;
     border-radius: 12px;
     padding: 40px 50px;
@@ -509,6 +560,22 @@ section .button {
     }
 }
 
+@media (max-width: 768px) {
+    .slider {
+        height: 300px;
+        /* smaller height for phones */
+    }
+
+    .project-info h3 {
+        font-size: 22px;
+    }
+
+    .project-info p {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
 /*Contact section*/
 .contact {
     width: 100%;
@@ -548,4 +615,14 @@ section .button {
 .contact span {
     color: white;
     font-size: 22px;
+}
+
+@media(max-width: 600px) {
+    .contact span {
+        font-size: 18px;
+    }
+
+    .contact i {
+        font-size: 22px;
+    }
 }
